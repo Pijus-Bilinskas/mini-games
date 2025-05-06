@@ -28,8 +28,8 @@ export default function Home() {
           </Link>
         </div>
         <div>
-          <Link href="/" className="bg-gray-700 font-bold text-xl text-white px-4 py-5 rounded-2xl hover:bg-gray-600">
-          placeholder game 2
+          <Link href="/slots" className="bg-gray-700 font-bold text-xl text-white px-4 py-5 rounded-2xl hover:bg-gray-600">
+          slots
           </Link>
         </div>
       </div>

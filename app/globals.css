@@ -150,3 +150,86 @@ background-color: oklch(87.2% 0.01 258.338);
     @apply bg-background text-foreground;
   }
 }
+
+
+.slot-machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.reels {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.reel-container {
+  width: 79px;
+  height: 79px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+.reel {
+  width: 79px;
+  height: 711px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-position-y 0.8s ease-in-out;
+}
+
+.reel.spinning{
+  animation: spin-loop 0.4s linear infinite;
+}
+
+
+@keyframes spin-loop {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -711px;
+  }
+}
+
+.spin-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background: #b91c1c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bet-input{
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 120px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.message{
+  margin: 10px 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.balance {
+  font-size: 18px;
+  color: #10b981;
+}
